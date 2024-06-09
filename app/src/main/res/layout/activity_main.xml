@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="POLIZAS"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/handjet" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                app:startIconDrawable="@drawable/nombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handjet"
+                    android:textAlignment="center"
+                    android:hint="Ingrese su Nombre"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                app:startIconDrawable="@drawable/numero">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEdad"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handjet"
+                    android:hint="Ingrese su edad"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handjet"
+                android:text="Seleccione la cuota"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/cmbPolizas"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </Spinner>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/handjet"
+                android:textColor="@color/white"
+                android:text="CONTESTE LAS SIGUIENTES PREGUNTAS"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handjet"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="¿Usted consume alcohol?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/cmbAlcohol"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="15dp"
+                >
+            </Spinner>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handjet"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="¿Usted utiliza lentes?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/cmbLentes"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="15dp"
+                >
+            </Spinner>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handjet"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="¿Sufre alguna enfermedad cardiaca?"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/cmbEnfermedades"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/handjet"
+        android:text="CALCULAR"
+        android:textColor="@color/white"
+        android:backgroundTint="#191970"
+        android:textSize="16sp">
+    </Button>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="325dp"
+        android:layout_height="129dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/handjet"
+        android:background="@drawable/hoka"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"></TextView>
+
+
+</LinearLayout>
